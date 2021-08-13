@@ -1,0 +1,26 @@
+.bold{
+    font-weight: bold;
+}
+.no-border{
+    border: none !important;
+}
+.no-bolder-bottom{
+    border-bottom: none !important;
+}
+.ft-40{
+    font-size: 40px !important;
+}
+
+
+// 手機版字體大小
+@media (max-width:576px){
+    .ft-md-32{
+        font-size: 32px;
+    }
+    .ft-md-22{
+        font-size: 22px;
+    }
+    .ft-md-20{
+        font-size: 20px;
+    }
+}

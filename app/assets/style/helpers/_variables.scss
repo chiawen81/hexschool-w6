@@ -36,32 +36,42 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$white:     #FFFFFF !default;
+$gray:      #FFFFFF !default;
+$light-gray:#EFEFEF !default;
+$black:     #000000 !default;
+$pink:      #E31277 !default;
+$purple:    #190014CC !default;
+$dark-red:  #630834 !default;
+
+$red:       red !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$blue:    blue !default;
+$indigo:  #6610f2 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
+  "white":      $white,
+  "gray":       $gray,
+  "light-gray": $light-gray,
+  "black":      $black,
+  "pink":       $pink,
+  "purple":     $purple,
+  "dark-red":   $dark-red,
+
   "blue":       $blue,
   "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
   "red":        $red,
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
   "teal":       $teal,
   "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
 // scss-docs-end colors-map
@@ -79,6 +89,15 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
+  "white":      $white,
+  "gray":       $gray,
+  "light-gray": $light-gray,
+  "black":      $black,
+  "pink":       $pink,
+  "purple":     $purple,
+  "dark-red":   $dark-red,
+
+
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -247,14 +266,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
+$spacer: 0.0625rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer * 5,
+  10: $spacer * 10,
+  15: $spacer * 15,
+  20: $spacer * 20,
+  25: $spacer * 25,
+  30: $spacer * 30,  
+  40: $spacer * 40,  
+  50: $spacer * 50,  
+  60: $spacer * 60,  
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -441,12 +464,14 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// 字體大小
+$h1-font-size:                $font-size-base * 2.5 !default;   // 40px
+$h2-font-size:                $font-size-base * 2 !default;     // 32px
+$h3-font-size:                $font-size-base * 1.75 !default;  // 28px
+$h4-font-size:                $font-size-base * 1.5 !default;   // 24px
+$h5-font-size:                $font-size-base * 1.25 !default;  // 20px
+$h6-font-size:                $font-size-base * 0.875 !default; // 14px
+$p-font-size:                 $font-size-base * 1 !default;     // 16px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
